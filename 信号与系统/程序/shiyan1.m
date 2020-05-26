@@ -19,8 +19,8 @@ subplot(235), plot(t, x5)
 title('钟形信号')
 
 x11 = sin(2 * (2 * t - 5));
-figure, subplot(121), plot(t, x11)
+figure, subplot(111), plot(t, x11)
 title('正弦信号变换')
 x22 = exp(-2 * (2 * t - 5));
-figure, subplot(122), plot(t, x22)
+figure, subplot(111), plot(t, x22)
 title('指数信号变换');

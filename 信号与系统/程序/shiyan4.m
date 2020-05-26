@@ -1,16 +1,16 @@
 clear
 clc
-close?all
-b = [1?3?2]; %微分方程左端
-a = [1?2?0]; %微分方程右端
+close聽all
+b = [1聽3聽2]; %寰垎鏂圭▼宸︾
+a = [1聽2聽0]; %寰垎鏂圭▼鍙崇
 sys = tf(a, b);
 pzmap(sys)
-axis([-5?5? - 2?2])
-syms?s?t
+axis([-5聽5聽-2聽2])
+syms聽s聽t
 sys = (2 * s + s^2) / (s^2 + 3 * s + 2);
 imp = ilaplace(sys, t);
 figure, ezplot(imp, [0, 5]);
-syms?t?x?X?H?Y?y?s
+syms聽t聽x聽X聽H聽Y聽y聽s
 x = exp(-t) * heaviside(t);
 X = laplace(x);
 H = (2 * s + s^2) / (s^2 + 3 * s + 2);
