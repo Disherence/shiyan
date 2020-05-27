@@ -12,7 +12,6 @@ N = length(n_max);
 x = zeros(1, length(t));
 
 for k = 1:N
-
     for n = 1:2:n_max(k);
         b = 4 ./ (pi * n);
         x = x + b * sin(w0 * n * t); end

@@ -1,6 +1,7 @@
 clear
 clc
-close
+close all
+
 t = -10:0.01:10;
 x1 = sin(5 * t);
 x2 = exp(2 * t);
